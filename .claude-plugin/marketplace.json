@@ -8,11 +8,6 @@
       "name": "pocketbase",
       "source": "./pocketbase-plugin",
       "description": "A comprehensive PocketBase skill combined with a dedicated pocketbase agent to use the skill effectively."
-    },
-    {
-      "name": "apex2",
-      "source": "./apex2-plugin",
-      "description": "Advanced plugin for Apex development and tooling."
     }
   ]
 }

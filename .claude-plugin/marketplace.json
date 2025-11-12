@@ -1,0 +1,13 @@
+{
+"name": "dev-marketplace",
+"owner": {
+"name": "Will Hampson"
+},
+"plugins": [
+{
+  "name": "pocketbase-plugin",
+  "source": "./pocketbase-plugin",
+  "description": "A comprehensive PocketBase skill combined with a dedicated pocketbase agent to use the skill effectively."
+}
+]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "pocketbase",
+  "description": "Comprehensive PocketBase development and deployment toolkit with 40+ reference files covering setup, API integration, Go extensions, security rules, schema templates, and deployment guides",
+  "version": "0.0.1",
+  "author": {
+    "name": "Will Hampson"
+  },
+  "category": "knowledge",
+  "tags": ["pocketbase", "backend", "database", "api", "go", "sdk", "deployment"],
+  "keywords": ["pocketbase", "backend-as-a-service", "database", "rest-api", "realtime", "authentication"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whamp/pocketbase-plugin"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/whamp/pocketbase-plugin",
+  "readme": "README.md"
+}

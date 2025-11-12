@@ -1,7 +1,7 @@
 {
   "name": "pocketbase",
   "description": "Comprehensive PocketBase development and deployment toolkit with 40+ reference files covering setup, API integration, Go extensions, security rules, schema templates, and deployment guides",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Will Hampson"
   },

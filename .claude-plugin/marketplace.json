@@ -1,14 +1,30 @@
 {
-"id": "Whamp/marketplace",
-"name": "Whamp/marketplace",
-"description": "A comprehensive PocketBase skill combined with a dedicated pocketbase agent to use the skill effectively.",
-"owner": {
-  "name": "Will Hampson",
-  "url": "https://github.com/Whamp"
-},
-"repository": "https://github.com/Whamp/marketplace",
-"manifestUrl": "https://raw.githubusercontent.com/Whamp/marketplace/refs/heads/master/.claude-plugin/marketplace.json",
-"tags": ["backend", "development", "sqlite", "database", "pocketbase"],
-"verified": false,
-"addedAt": "2025-11-11"
+  "name": "whamp-claude-tools",
+  "owner": {
+    "name": "Will Hampson"
+  },
+  "metadata": {
+    "description": "Claude Code plugins and skills by Whamp"
+  },
+  "plugins": [
+    {
+      "name": "pocketbase",
+      "source": "./pocketbase-plugin",
+      "description": "Comprehensive PocketBase development and deployment toolkit with 40+ reference files covering setup, API integration, Go extensions, security rules, schema templates, and deployment guides",
+      "version": "0.0.1",
+      "author": {
+        "name": "Will Hampson"
+      },
+      "homepage": "https://github.com/Whamp/pocketbase-plugin",
+      "repository": "https://github.com/Whamp/marketplace/tree/main/pocketbase-plugin",
+      "keywords": [
+        "pocketbase",
+        "backend-as-a-service",
+        "database",
+        "rest-api",
+        "realtime",
+        "authentication"
+      ]
+    }
+  ]
 }

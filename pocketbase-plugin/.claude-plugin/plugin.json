@@ -5,14 +5,8 @@
   "author": {
     "name": "Will Hampson"
   },
-  "category": "knowledge",
-  "tags": ["pocketbase", "backend", "database", "api", "go", "sdk", "deployment"],
   "keywords": ["pocketbase", "backend-as-a-service", "database", "rest-api", "realtime", "authentication"],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Whamp/pocketbase-plugin"
-  },
+  "repository": "https://github.com/Whamp/marketplace/tree/main/pocketbase-plugin",
   "license": "MIT",
-  "homepage": "https://github.com/Whamp/pocketbase-plugin",
-  "readme": "README.md"
+  "homepage": "https://github.com/Whamp/pocketbase-plugin"
 }

@@ -7,7 +7,7 @@ description: Comprehensive PocketBase development and deployment skill providing
 
 ## Overview
 
-This skill provides modular, searchable documentation for PocketBase development. Use the table of contents below to navigate to specific topics. The researcher-pocketbase agent can efficiently search and extract information from the reference files based on your query.
+This skill provides modular, searchable documentation for PocketBase development. Use the table of contents below to navigate to specific topics. The researcher-pocketbase agent can efficiently search and extract information from the reference files based on your query. PocketBase is an open source backend in 1 file. It provides a realtime database, authentication, file storage, an admin dashboard and is extendable to much more.
 
 ## Quick Navigation
 

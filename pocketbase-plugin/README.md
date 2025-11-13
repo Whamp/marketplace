@@ -4,7 +4,7 @@ A comprehensive PocketBase development and deployment toolkit for Claude Code, p
 
 ## Overview
 
-This plugin bundles a complete PocketBase knowledge base with 40+ reference files covering everything from basic setup to advanced Go extensions and production deployment. It also includes a specialized research agent optimized for navigating and synthesizing PocketBase information.
+This plugin bundles a complete PocketBase knowledge base with 40+ reference files covering everything from basic setup to advanced Go extensions and production deployment. It also includes a specialized research agent optimized for navigating and synthesizing PocketBase information. PocketBase is an open source backend in 1 file. It provides a realtime database, authentication, file storage, an admin dashboard and is extendable to much more.
 
 ## What's Included
 

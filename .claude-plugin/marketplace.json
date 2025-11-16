@@ -44,6 +44,24 @@
         "screenshot",
         "javascript"
       ]
+    },
+     {
+      "name": "gemini-cli",
+      "source": "./gemini-cli-plugin",
+      "description": "Let claude use Gemini CLI for large context window tasks and Gemini specific strengths",
+      "version": "1.0.0",
+      "author": {
+        "name": "Will Hampson"
+      },
+      "homepage": "https://github.com/Whamp/marketplace",
+      "repository": "https://github.com/Whamp/marketplace/tree/main/gemini-cli-plugin",
+      "keywords": [
+        "gemini",
+        "automation",
+        "agent",
+        "cli",
+        "meta"
+      ]
     }
   ]
 }

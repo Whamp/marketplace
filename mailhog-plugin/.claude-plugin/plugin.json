@@ -1,12 +1,12 @@
 {
-  "name": "pocketbase",
-  "description": "Comprehensive PocketBase development and deployment toolkit with 40+ reference files covering setup, API integration, Go extensions, security rules, schema templates, and deployment guides",
-  "version": "0.0.2",
+  "name": "mailhog",
+  "description": "Comprehensive MailHog email testing server management toolkit with SMTP testing, email capture, development integration, and automated email workflow testing",
+  "version": "1.0.0",
   "author": {
     "name": "Will Hampson"
   },
-  "keywords": ["pocketbase", "backend-as-a-service", "database", "rest-api", "realtime", "authentication"],
-  "repository": "https://github.com/Whamp/marketplace/tree/main/pocketbase-plugin",
+  "keywords": ["mailhog", "email", "smtp", "testing", "development", "email-testing", "smtp-server", "email-capture"],
+  "repository": "https://github.com/Whamp/marketplace/tree/main/mailhog-plugin",
   "license": "MIT",
   "homepage": "https://github.com/Whamp/marketplace"
 }

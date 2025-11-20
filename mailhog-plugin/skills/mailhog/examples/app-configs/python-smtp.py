@@ -19,6 +19,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
 class EmailSender:
     """Email sender class that works with MailHog and real SMTP servers"""
 
@@ -63,7 +64,7 @@ class EmailSender:
             return False
 
     def send_html_email(self, to_email: str, subject: str, html_body: str,
-                      text_body: Optional[str] = None) -> bool:
+                        text_body: Optional[str] = None) -> bool:
         """Send HTML email with optional plain text fallback"""
         try:
             msg = MIMEMultipart('alternative')
@@ -96,7 +97,7 @@ class EmailSender:
             return False
 
     def send_email_with_attachments(self, to_email: str, subject: str,
-                                   body: str, attachments: List[str]) -> bool:
+                                    body: str, attachments: List[str]) -> bool:
         """Send email with file attachments"""
         try:
             msg = MIMEMultipart()
@@ -116,7 +117,8 @@ class EmailSender:
                         encoders.encode_base64(part)
                         part.add_header(
                             'Content-Disposition',
-                            f'attachment; filename= {os.path.basename(file_path)}'
+                            ('attachment; filename=' +
+                             f'{os.path.basename(file_path)}')
                         )
                         msg.attach(part)
                 else:
@@ -124,14 +126,16 @@ class EmailSender:
 
             with self.create_connection() as server:
                 server.send_message(msg)
-                logger.info(f"Email with attachments sent successfully to {to_email}")
+                logger.info(
+                    f"Email with attachments sent successfully to {to_email}"
+                )
                 return True
         except Exception as e:
             logger.error(f"Failed to send email with attachments: {e}")
             return False
 
     def send_bulk_emails(self, recipients: List[str], subject: str, body: str,
-                        is_html: bool = False) -> Dict[str, Any]:
+                         is_html: bool = False) -> Dict[str, Any]:
         """Send bulk emails to multiple recipients"""
         results = {
             'total': len(recipients),
@@ -154,9 +158,12 @@ class EmailSender:
                     results['errors'].append(f"Failed to send to {recipient}")
             except Exception as e:
                 results['failed'] += 1
-                results['errors'].append(f"Error sending to {recipient}: {str(e)}")
+                results['errors'].append(
+                    f"Error sending to {recipient}: {str(e)}"
+                )
 
         return results
+
 
 # Example usage and test functions
 def test_basic_email():
@@ -168,6 +175,7 @@ def test_basic_email():
         body='This is a test email sent from Python using MailHog.'
     )
     print(f"Basic email test: {'PASSED' if success else 'FAILED'}")
+
 
 def test_html_email():
     """Test sending an HTML email"""
@@ -195,6 +203,7 @@ def test_html_email():
     )
     print(f"HTML email test: {'PASSED' if success else 'FAILED'}")
 
+
 def test_bulk_emails():
     """Test sending bulk emails"""
     sender = EmailSender()
@@ -210,9 +219,13 @@ def test_bulk_emails():
         body='This is a bulk email test sent to multiple recipients.'
     )
 
-    print(f"Bulk email test: {results['successful']}/{results['total']} successful")
+    print(
+            "Bulk email test: " +
+            f"{results['successful']}/{results['total']} successful"
+        )
     if results['errors']:
         print("Errors:", results['errors'])
+
 
 def test_connection():
     """Test SMTP connection"""
@@ -226,6 +239,7 @@ def test_connection():
         print(f"SMTP connection test: FAILED - {e}")
         return False
 
+
 if __name__ == '__main__':
     print("Running MailHog Python email tests...")
     print("=" * 40)
@@ -235,6 +249,7 @@ if __name__ == '__main__':
     test_basic_email()
     test_html_email()
     test_bulk_emails()
-
     print("=" * 40)
-    print("Email tests completed. Check MailHog UI at http://localhost:8025")
+    print(
+        "Email tests completed. Check MailHog UI at http://localhost:8025"
+    )

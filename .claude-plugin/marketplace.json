@@ -1,10 +1,8 @@
 {
   "name": "whamp-claude-tools",
+  "description": "Claude Code plugins including PocketBase, MailHog, Browser Tools, and Gemini CLI integration by Whamp",
   "owner": {
     "name": "Will Hampson"
-  },
-  "metadata": {
-    "description": "Claude Code plugins and skills by Whamp"
   },
   "plugins": [
     {
